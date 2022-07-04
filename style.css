@@ -38,6 +38,10 @@
     align-self: center;
     
 }
+
+.encabezado__logo{
+    height: 37px;
+}
 .encabezado__logo-y-barra{
     display: flex;
     justify-content: space-between;
@@ -62,6 +66,11 @@
     background: #fdfdfd;
     border: 1px solid var(--color-azul);
     color: var(--color-boton-login);
+}
+
+.encabezado__btn:hover{
+    background: var(--color-azul);
+    color: #fdfdfd;
 }
 /* CSS DEL BANNER */
 .banner{
@@ -127,11 +136,16 @@
     color: var(--color-descripcion);
     font-weight: bold;
 }
-.productos__link{
-    color: var(--color-azul);
+.productos__link, .sobre-nosotros__links{
+    color: var(--color-descripcion);
     font-weight: bold;
     text-decoration: none;
+    text-decoration: 2s;
 }
+.sobre-nosotros__links:hover{
+    text-decoration: underline;
+}
+
 .productos__ver-todo{
     text-decoration: none;
     color: var(--color-azul);
@@ -149,6 +163,9 @@
     display: flex;
     justify-content: space-around;
     padding: 3em 0;
+}
+.sobre-nosotros__logo{
+    align-self: flex-start;
 }
 
 .sobre-nosotros__enlaces,.sobre-nosotros__formulario{

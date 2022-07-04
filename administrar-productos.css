@@ -1,0 +1,54 @@
+/* CSS DE ADMINISTRAR PRODUCTOS */
+
+.administar-productos{
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+    padding: 4em 5%;
+    gap: 1em;
+}
+
+.administrar-productos__container{
+    display: flex;
+    justify-content: space-between;
+}
+.administrar-productos__productos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.administrar-productos__imagen--contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.administrar-productos__descripcion{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
+}
+.administrar-productos__precio{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
+    font-weight: bold;
+}
+
+.fa-trash-can{
+    position: relative;
+    top: 43px;
+    left: 120px;
+    color: #fdfdfd;
+}
+.fa-pen-to-square{
+    position: relative;
+    top: 27px;
+    left: 149px;
+    color: #fdfdfd;
+}
+
+.administrar-productos__boton{
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+    width: 144px;
+    height: 51px;
+    font-family: var(--Raleway);
+}

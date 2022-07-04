@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script src="https://kit.fontawesome.com/d3853316bd.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <header class="encabezado">
+            <div class="encabezado__container">
+                <div class="encabezado__logo-y-barra">
+                    <img class="encabezado__logo" src="imagenes/Logo.svg">
+                    <div class="encabezado__barra-de-busqueda-y-lupa">
+                        <input class="encabezado__barra-de-busqueda" type="text" placeholder="¿Qué deseas buscar?">
+                        <button type="submit" class="encabezado__btn-busqueda" href="#" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="login">
+            <form class="login__container" action="administrar-productos.html">
+                <h3 class="login__titulo">Iniciar sesión</h3>
+                <input class="login__correo" type="email" required placeholder="Escriba su correo electrónico">
+                <input class="login__contraseña" type="password" required placeholder="Escriba su contraseña">
+                <button class="login__boton" type="submit">Entrar</button>
+            </form>
+        </section>
+        <section class="sobre-nosotros">
+            <div class="sobre-nosotros__container">
+                <img class="sobre-nosotros__logo" src="imagenes/Logo.svg">
+                <div class="sobre-nosotros__enlaces">
+                    <a class="sobre-nosotros__links" href="#">Quienes somos</a>
+                    <a class="sobre-nosotros__links" href="#">Politica de privacidad</a>
+                    <a class="sobre-nosotros__links" href="#">Programa de fidelidad</a>
+                    <a class="sobre-nosotros__links" href="#">Nuestras Tiendas</a>
+                    <a class="sobre-nosotros__links" href="#">Quiero ser franquiciado</a>
+                    <a class="sobre-nosotros__links" href="#">Anúncie aquí</a>
+                </div>
+                <form class="sobre-nosotros__formulario">
+                    <input class="sobre-nosotros__nombre" placeholder="Nombre" type="text" required>
+                    <input class="sobre-nosotros__mensaje" placeholder="Escribe tu mensaje" type="text" required>
+                    <button class="sobre-nosotros__boton" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <p class="footer__desarrollador">Desarrollado por Alberto Salazar</p>
+            <p class="footer__año">2022</p>
+        </section>
+    </body>
+</html>

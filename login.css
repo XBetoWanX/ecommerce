@@ -1,0 +1,33 @@
+/* CSS DE LOGIN */
+
+.login{
+    background: #E5E5E5;
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 1em;
+    padding: 4em 0;
+}
+.login__titulo{
+    text-align: center;
+    font-family: var(--Raleway);
+}
+.login__correo, .login__contraseña{
+    width: 20em;
+    height: 3em;
+    border: none;
+}
+.login__boton{
+    width: 20.3em;
+    height: 3em;
+    font-family: var(--Raleway);
+    color: #fdfdfd;
+    background: var(--color-azul);
+    border: none;
+}
+::placeholder{
+    font-family: var(--Raleway);
+    padding-left: 1em;
+}
