@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Raleway: 'Raleway', sans-serif;
+    --color-blanco: #fdfdfd;
+    --color-de-fondo-productos: #F5F5F5;
+    --color-de-fondo-contacto: #EAF2FD;
+    --color-barra-de-busqueda:#F5F5F5;
+    --color-azul: #2A7AE4;
+    --color-descripcion: #464646;
+}
+/* CSS DEL ENCABEZADO */
+.encabezado{
+    margin: 0% 10%;
+}
+
+.encabezado__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+
+}
+.encabezado__barra-de-busqueda-y-lupa, .encabezado__login{
+    display: flex;
+    gap: 1px;
+}
+.encabezado__barra-de-busqueda{
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    background: var(--color-barra-de-busqueda);
+}
+.fa-magnifying-glass{
+    align-self: center;
+    
+}
+.encabezado__logo-y-barra{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.fa-dumpster{
+    align-self: center;
+}
+.encabezado__btn-busqueda{
+    background: transparent;
+    border: none;
+    position: relative;
+    left: -26px;
+    top: 0px;
+}
+.encabezado__btn-busqueda:hover{
+    font-size: larger;
+}
+.encabezado__btn{
+    width: 137px;
+    height: 34px;
+    background: #fdfdfd;
+    border: 1px solid var(--color-azul);
+    color: var(--color-boton-login);
+}
+/* CSS DEL BANNER */
+.banner{
+    background-image: url("https://blog.seccionamarilla.com.mx/wp-content/uploads/2020/06/pc-gamer-barata-partes-y-ycaracteristicas-770x578.jpg");
+    height: 13em;
+    background-size: cover;
+    background-position: center;
+
+}
+.banner__promocion{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.4em;
+    margin-left: 20%;
+    padding-top: 5em;
+}
+.banner__button{
+    width: 8em;
+    height: 3em;
+    background: var(--color-azul);
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.banner__titulo, .banner_descripcion{
+    font-family: var(--Raleway);
+    color: var(--color-blanco);
+}
+
+/* CSS DE LOS PRODUCTOS */
+.productos{
+    background: var(--color-de-fondo-productos);
+    /* margin: 0% 10%; */
+}
+.productos__titulo-y-ver-todo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 3% 0 10%;
+    padding-top: 2em;
+}
+.productos__hardware, .productos__consolas, .productos__pcs-armadas{
+    display: flex;
+    padding: 0.4em 10% 2em 10%;
+    gap: 1em;
+}
+.productos__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    
+}
+.productos__img{
+    width: 176px;
+    height: 174px;
+}
+.productos__descripcion{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
+}
+.productos__precio{
+    color: var(--color-descripcion);
+    font-weight: bold;
+}
+.productos__link{
+    color: var(--color-azul);
+    font-weight: bold;
+    text-decoration: none;
+}
+.productos__ver-todo{
+    text-decoration: none;
+    color: var(--color-azul);
+    font-weight: bold;
+}
+.fa-up-right-from-square{
+    color: var(--color-azul);
+}
+/* CSS DE SOBRE NOSOTROS */
+.sobre-nosotros{
+    background: var(--color-de-fondo-contacto);
+}
+.sobre-nosotros__container{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 0;
+}
+
+.sobre-nosotros__enlaces,.sobre-nosotros__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: var(--Raleway);
+    
+}
+.sobre-nosotros__nombre{
+    width: 560px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+
+}
+.sobre-nosotros__mensaje{
+    width: 560px;
+    height: 82px;
+    border: none;
+    border-radius: 4px;
+}
+.sobre-nosotros__boton{
+    width: 144px;
+    height: 51px;
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+    font-family: var(--Raleway);
+}
+/*CSS DEL FOOTER*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
