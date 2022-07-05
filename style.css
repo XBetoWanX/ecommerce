@@ -11,6 +11,7 @@
     --color-barra-de-busqueda:#F5F5F5;
     --color-azul: #2A7AE4;
     --color-descripcion: #464646;
+    --color-fondo: #e5e5e5;
 }
 /* CSS DEL ENCABEZADO */
 .encabezado{
@@ -136,9 +137,14 @@
     color: var(--color-descripcion);
     font-weight: bold;
 }
-.productos__link, .sobre-nosotros__links{
-    color: var(--color-descripcion);
+.productos__link{
+    color: var(--color-azul);
     font-weight: bold;
+    text-decoration: none;
+    
+}
+.sobre-nosotros__links{
+    color: var(--color-descripcion);
     text-decoration: none;
     text-decoration: 2s;
 }
@@ -158,6 +164,11 @@
 .sobre-nosotros{
     background: var(--color-de-fondo-contacto);
 }
+.sobre-nosotros__titulo{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
+}
+
 .sobre-nosotros__container{
     margin: 0 10%;
     display: flex;

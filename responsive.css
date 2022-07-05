@@ -1,16 +1,71 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    /* ENCABEZADO RESPONSIVE */
+    .encabezado{
+        margin: 0;
+    }
+    .encabezado__logo-y-barra{
+       
+        
+    }
+    .encabezado__container{
+       
+    }
     
+    .encabezado__barra-de-busqueda-y-lupa{
+        
+    }
+    .encabezado__barra-de-busqueda{
+        display: none;
+    }
+    .encabezado__logo{
+       
+    }
+    .encabezado__btn-busqueda{
+       
+    }
+    /* PRODUCTOS RESPONSIVE */
+    .productos__hardware, .productos__consolas, .productos__pcs-armadas{
+        flex-wrap: wrap;
+    }
+    .productos__img{
+        width: 156px;
+        height: 160px;
+    }
+    .productos__hardware, .productos__consolas, .productos__pcs-armadas {
+        display: flex;
+        padding: 0.4em 5% 2em 5%;
+        gap: 1em;
+    }
+    /* CSS SOBRE NOSOTROS */
+    .sobre-nosotros__container{
+        flex-direction: column;
+        margin: 0 5%;
+        width: 328px;
+        gap: 1em;
+    }
+    .sobre-nosotros__nombre,.sobre-nosotros__mensaje{
+        width: 328px;
+    }
+    .sobre-nosotros__enlaces{
+        align-items: center;
+    }
+    .sobre-nosotros__logo{
+        align-self: center;
+    }
+    ::placeholder{
+        font-family: var(--Raleway);
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {}

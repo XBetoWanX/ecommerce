@@ -1,0 +1,27 @@
+.agregar{
+    background: var(--color-fondo);
+}
+.agregar__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30%;
+    gap: 1em;
+    padding: 1em 0;
+}
+.agregar__titulo{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
+}
+.agregar__url, .agregar__categorias, .agregar__nombre, .agregar__precio, .agregar__descripcion{
+    height: 56px;
+    border: none;
+}
+.agregar__boton{
+    color: #fdfdfd;
+    height: 51px;
+    background: var(--color-azul);
+    border: none;
+}
+::placeholder{
+    font-family: var(--Raleway);
+}

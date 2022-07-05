@@ -10,6 +10,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="agregar-nuevo-producto.css">
 </head>
 
 <body>
@@ -26,7 +27,17 @@
         </div>
     </header>
     
-    
+    <section class="agregar">
+        <form class="agregar__container" type="text" placeholder="URL de imagen" required>
+            <h1 class="agregar__titulo">Agregar nuevo producto</h1>
+            <input class="agregar__url" type="url" placeholder="URL de imagen" required>
+            <input class="agregar__categorias" type="text" placeholder="Categoría" required>
+            <input class="agregar__nombre" type="text" placeholder="Nombre del producto" required>
+            <input class="agregar__precio" type="number" placeholder="Precio del producto MXN" required>
+            <input class="agregar__descripcion" type="text" placeholder="Descripción del producto" required>
+            <button class="agregar__boton" type="submit">Agregar nuevo producto</button>
+        </form>
+    </section>
     <section class="sobre-nosotros">
         <div class="sobre-nosotros__container">
             <img class="sobre-nosotros__logo" src="imagenes/Logo.svg">
