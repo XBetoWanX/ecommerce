@@ -56,6 +56,28 @@
     ::placeholder{
         font-family: var(--Raleway);
     }
+    /* CSS DE ADMINISTRAR-PRODUCTOS */
+    .administrar-productos__container{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .administrar-productos__productos{
+        flex-wrap: wrap;
+    }
+    .administrar-productos__imagen{
+        width: 140px;
+    }
+    .fa-trash-can{
+        left: 75px;
+    }
+    .fa-pen-to-square{
+        left: 115px;
+    }
+
+    /* CSS DE AGREGAR NUEVO PRODUCTO */
+    .agregar__container{
+        margin: 0 5%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -5,16 +5,20 @@
     flex-direction: column;
     background: #E5E5E5;
     padding: 4em 5%;
-    gap: 1em;
 }
 
 .administrar-productos__container{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .administrar-productos__productos{
     display: flex;
     justify-content: space-between;
+}
+.administrar-productos__titulo{
+    color: var(--color-descripcion);
+    font-family: var(--Raleway);
 }
 
 .administrar-productos__imagen--contenedor{
