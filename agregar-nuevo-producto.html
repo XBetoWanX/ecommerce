@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="agregar-nuevo-producto.css">
     <link rel="stylesheet" href="responsive.css">
+    
 </head>
 
 <body>
@@ -30,11 +31,21 @@
     <section class="agregar">
         <form class="agregar__container" type="text" placeholder="URL de imagen" required>
             <h1 class="agregar__titulo">Agregar nuevo producto</h1>
-            <input class="agregar__url" type="url" placeholder="URL de imagen" required>
-            <input class="agregar__categorias" type="text" placeholder="Categoría" required>
-            <input class="agregar__nombre" type="text" placeholder="Nombre del producto" required>
-            <input class="agregar__precio" type="number" placeholder="Precio del producto MXN" required>
-            <input class="agregar__descripcion" type="text" placeholder="Descripción del producto" required>
+            <label for="url">URL de imagen</label>
+            <input name = "url" class="agregar__url" type="url" required>
+            <label for="categoria">Categoría</label>
+            <select class="agregar__categorias" name = "categoria" placeholder="Categoría" required>
+                <option value="star wars">Star Wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            
+            <label for="nombre">Nombre del producto</label>
+            <input name = "nombre" class="agregar__nombre" type="text" required>
+            <label for="precio">Precio del producto</label>
+            <input name = "precio" class="agregar__precio" type="number" placeholder="Precio del producto MXN" required>
+            <label for="descripcion">Descripción del producto</label>
+            <input  name = "descripcion" class="agregar__descripcion" type="text" placeholder="Descripción del producto" required>
             <button class="agregar__boton" type="submit">Agregar nuevo producto</button>
         </form>
     </section>

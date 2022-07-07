@@ -36,15 +36,11 @@
 }
 
 .fa-trash-can{
-    position: relative;
-    top: 43px;
-    left: 120px;
+    font-size: large;
     color: #fdfdfd;
 }
 .fa-pen-to-square{
-    position: relative;
-    top: 27px;
-    left: 149px;
+    font-size: large;
     color: #fdfdfd;
 }
 
@@ -55,4 +51,22 @@
     width: 144px;
     height: 51px;
     font-family: var(--Raleway);
+}
+.administrar-productos__trash{
+    background: transparent;
+    position: relative;
+    width: 27px;
+    height: 28px;
+    top: 64px;
+    left: 113px;
+    border: none;
+}
+.administrar-productos__edit{
+    background: transparent;
+    position: relative;
+    width: 27px;
+    height: 28px;
+    top: 36px;
+    left: 141px;
+    border: none;
 }

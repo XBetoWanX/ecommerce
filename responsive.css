@@ -67,11 +67,11 @@
     .administrar-productos__imagen{
         width: 140px;
     }
-    .fa-trash-can{
-        left: 75px;
+    .administrar-productos__trash{
+        left: 86px;
     }
-    .fa-pen-to-square{
-        left: 115px;
+    .administrar-productos__edit{
+        left: 114px;
     }
 
     /* CSS DE AGREGAR NUEVO PRODUCTO */
