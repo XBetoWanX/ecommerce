@@ -1,93 +1,272 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
     /* ENCABEZADO RESPONSIVE */
-    .encabezado{
+    .encabezado {
         margin: 0;
     }
-    .encabezado__logo-y-barra{
-       
-        
+
+    .encabezado__logo-y-barra {
+        flex-direction: column;
+
     }
-    .encabezado__container{
-       
+
+    .encabezado__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
-    
-    .encabezado__barra-de-busqueda-y-lupa{
-        
+
+    .encabezado__barra-de-busqueda-y-lupa {
+        align-items: center;
     }
-    .encabezado__barra-de-busqueda{
-        display: none;
-    }
-    .encabezado__logo{
-       
-    }
-    .encabezado__btn-busqueda{
-       
-    }
+
+    .encabezado__barra-de-busqueda {}
+
+    .encabezado__logo {}
+
+    .encabezado__btn-busqueda {}
+
+    .encabezado__btn {}
+
     /* PRODUCTOS RESPONSIVE */
-    .productos__hardware, .productos__consolas, .productos__pcs-armadas{
+    .productos__titulo-y-ver-todo {
+        margin: 0px 8% 0px 5%;
+    }
+
+    .productos__hardware,
+    .productos__consolas,
+    .productos__pcs-armadas {
         flex-wrap: wrap;
     }
-    .productos__img{
+
+    .productos__img {
         width: 156px;
         height: 160px;
     }
-    .productos__hardware, .productos__consolas, .productos__pcs-armadas {
+
+    .productos__hardware,
+    .productos__consolas,
+    .productos__pcs-armadas {
         display: flex;
         padding: 0.4em 5% 2em 5%;
         gap: 1em;
     }
+
     /* CSS SOBRE NOSOTROS */
-    .sobre-nosotros__container{
+    .sobre-nosotros__container {
         flex-direction: column;
         margin: 0 5%;
         width: 328px;
         gap: 1em;
     }
-    .sobre-nosotros__nombre,.sobre-nosotros__mensaje{
+
+    .sobre-nosotros__nombre,
+    .sobre-nosotros__mensaje {
         width: 328px;
     }
-    .sobre-nosotros__enlaces{
+
+    .sobre-nosotros__enlaces {
         align-items: center;
     }
-    .sobre-nosotros__logo{
+
+    .sobre-nosotros__logo {
         align-self: center;
     }
-    ::placeholder{
+
+    ::placeholder {
         font-family: var(--Raleway);
     }
+
     /* CSS DE ADMINISTRAR-PRODUCTOS */
-    .administrar-productos__container{
+    .administrar-productos__container {
         flex-direction: column;
         gap: 1em;
     }
-    .administrar-productos__productos{
+
+    .administrar-productos__productos {
         flex-wrap: wrap;
     }
-    .administrar-productos__imagen{
+
+    .administrar-productos__imagen {
         width: 140px;
     }
-    .administrar-productos__trash{
+
+    .administrar-productos__trash {
         left: 86px;
     }
-    .administrar-productos__edit{
+
+    .administrar-productos__edit {
         left: 114px;
     }
 
     /* CSS DE AGREGAR NUEVO PRODUCTO */
-    .agregar__container{
+    .agregar__container {
         margin: 0 5%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+
+    /* PRODUCTOS RESPONSIVE */
+    .productos__hardware,
+    .productos__consolas,
+    .productos__pcs-armadas {
+        flex-wrap: wrap;
+        padding: 0.4em 3% 2em 3%;
+    }
+
+    .productos__container:nth-child(5),
+    .productos__container:last-child {
+        display: none;
+    }
+
+    /* CSS SOBRE NOSOTROS RESPONSIVE */
+
+    .sobre-nosotros__container {
+        margin: 0px 6%;
+        flex-direction: column;
+    }
+
+    .sobre-nosotros__logo {
+        align-self: center;
+    }
+
+    .sobre-nosotros__nombre {
+        width: 550px;
+    }
+
+    .sobre-nosotros__mensaje {
+        width: 550px;
+    }
+
+    .sobre-nosotros__formulario {
+        width: 40%;
+
+    }
+
+    .sobre-nosotros__enlaces {
+        width: 33%;
+        align-self: center;
+    }
+
+    .sobre-nosotros__links {
+        text-align: center;
+    }
+
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .productos__img {
+        width: 164px;
+        height: 174px;
+    }
+
+    .sobre-nosotros__nombre {
+        width: 700px;
+    }
+
+    .sobre-nosotros__mensaje {
+        width: 700px;
+    }
+
+    .productos__container:nth-child(5),
+    .productos__container:last-child {
+        display: flex;
+    }
+
+    .sobre-nosotros__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sobre-nosotros__logo {
+        align-self: start;
+        padding: 0 30em 0 0;
+    }
+    .sobre-nosotros__enlaces {
+        width: 26%;
+        align-self: center;
+    }
+    .sobre-nosotros__formulario {
+        width: 61%;
+        align-self: flex-start;
+    }
+    .sobre-nosotros__nombre {
+        width: 100%;
+    }
+    .sobre-nosotros__mensaje {
+        width: 100%;
+    }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .productos__img {
+        width: 140px;
+        height: 150px;
+    }
+
+    .sobre-nosotros__nombre {
+        width: 100%;
+    }
+
+    .sobre-nosotros__mensaje {
+        width: 100%;
+    }
+
+    .sobre-nosotros__container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .sobre-nosotros__logo {
+        align-self: flex-start;
+        padding: 0;
+    }
+
+    .sobre-nosotros__enlaces {
+        align-self: flex-start;
+    }
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .productos__titulo-y-ver-todo {
+        margin: 0px 6% 0px 6%;
+    }
+
+    .productos__hardware,
+    .productos__consolas,
+    .productos__pcs-armadas {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .productos__img {
+        width: 176px;
+        height: 174px;
+    }
+
+    .productos__hardware,
+    .productos__consolas,
+    .productos__pcs-armadas {
+        flex-wrap: wrap;
+        padding: 0.4em 6% 2em 6%;
+    }
+
+    .sobre-nosotros__nombre {
+        width: 100%;
+    }
+
+    .sobre-nosotros__mensaje {
+        width: 100%;
+    }
+}
