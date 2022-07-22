@@ -111,7 +111,7 @@
 .productos__titulo-y-ver-todo{
     display: flex;
     justify-content: space-between;
-    margin: 0px 3% 0 10%;
+    margin: 0px 3% 0 3%;
     padding-top: 2em;
 }
 .productos__hardware, .productos__consolas, .productos__pcs-armadas{

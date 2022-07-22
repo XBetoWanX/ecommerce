@@ -12,7 +12,8 @@
     justify-content: space-between;
     align-items: baseline;
 }
-.administrar-productos__productos{
+.administrar-productos__productos, .administrar-productos__productos--2, .administrar-productos__productos--3{
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
@@ -52,13 +53,22 @@
     height: 51px;
     font-family: var(--Raleway);
 }
-.administrar-productos__trash{
+.fa-trash-can{
     background: transparent;
     position: relative;
     width: 27px;
     height: 28px;
-    top: 64px;
+    top: 69px;
     left: 113px;
+    border: none;
+}
+.fa-pen-to-square{
+    background: transparent;
+    position: relative;
+    width: 27px;
+    height: 28px;
+    top: 40px;
+    left: 148px;
     border: none;
 }
 .administrar-productos__edit{

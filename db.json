@@ -1,0 +1,60 @@
+{
+    "productos": [
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars1.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars1"
+      },
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars2.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars2"
+      },
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars3.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars3"
+      },
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars4.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars4"
+      },
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars5.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars5"
+      },
+      {
+        "seccion": "StarWars",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/stars6.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "stars6"
+      },
+      {
+        "seccion": "Consolas",
+        "nombre": "Producto XYZ",
+        "precio": 50,
+        "image": "imagenes/consolas1.png",
+        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+        "id": "consolas1"
+      }
+    ]
+}
