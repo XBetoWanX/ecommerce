@@ -1,51 +1,58 @@
 /* CSS DE ADMINISTRAR PRODUCTOS */
 
-.administar-productos{
+.administar-productos {
     display: flex;
     flex-direction: column;
     background: #E5E5E5;
     padding: 4em 5%;
 }
 
-.administrar-productos__container{
+.administrar-productos__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-.administrar-productos__productos, .administrar-productos__productos--2, .administrar-productos__productos--3{
+
+.administrar-productos__productos,
+.administrar-productos__productos--2,
+.administrar-productos__productos--3 {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
-.administrar-productos__titulo{
+
+.administrar-productos__titulo {
     color: var(--color-descripcion);
     font-family: var(--Raleway);
 }
 
-.administrar-productos__imagen--contenedor{
+.administrar-productos__imagen--contenedor {
     display: flex;
     flex-direction: column;
 }
-.administrar-productos__descripcion{
+
+.administrar-productos__descripcion {
     color: var(--color-descripcion);
     font-family: var(--Raleway);
 }
-.administrar-productos__precio{
+
+.administrar-productos__precio {
     color: var(--color-descripcion);
     font-family: var(--Raleway);
     font-weight: bold;
 }
 
-.fa-trash-can{
-    font-size: large;
-    color: #fdfdfd;
-}
-.fa-pen-to-square{
+.fa-trash-can {
     font-size: large;
     color: #fdfdfd;
 }
 
-.administrar-productos__boton{
+.fa-pen-to-square {
+    font-size: large;
+    color: #fdfdfd;
+}
+
+.administrar-productos__boton {
     background: var(--color-azul);
     color: var(--color-blanco);
     border: none;
@@ -53,7 +60,15 @@
     height: 51px;
     font-family: var(--Raleway);
 }
-.fa-trash-can{
+.administrar-productos__boton--rojo{
+    background: red;
+    color: var(--color-blanco);
+    border: none;
+    width: 144px;
+    height: 51px;
+    font-family: var(--Raleway);
+}
+.fa-trash-can {
     background: transparent;
     position: relative;
     width: 27px;
@@ -62,7 +77,8 @@
     left: 113px;
     border: none;
 }
-.fa-pen-to-square{
+
+.fa-pen-to-square {
     background: transparent;
     position: relative;
     width: 27px;
@@ -71,7 +87,8 @@
     left: 148px;
     border: none;
 }
-.administrar-productos__edit{
+
+.administrar-productos__edit {
     background: transparent;
     position: relative;
     width: 27px;
@@ -79,4 +96,18 @@
     top: 36px;
     left: 141px;
     border: none;
+}
+.administar-productos__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.administar-productos__botones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
 }

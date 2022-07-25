@@ -95,11 +95,9 @@
     .fa-trash-can {
         left: 86px;
     }
-
-    .administrar-productos__edit {
-        left: 114px;
+    .fa-pen-to-square {
+        left: 118px;
     }
-
     /* CSS DE AGREGAR NUEVO PRODUCTO */
     .agregar__container {
         margin: 0 5%;

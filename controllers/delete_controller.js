@@ -1,4 +1,4 @@
-//Funcion para crear cada uno de los productos
+//Función para crear cada uno de los productos
 const crearProducto = (imagen, descripcion, precio) => {
     const contenedorProducto = document.querySelector(".administrar-productos__productos");
     const item = document.createElement("div");
@@ -17,7 +17,7 @@ const crearProducto = (imagen, descripcion, precio) => {
     costo.classList.add("administrar-productos__precio");
     costo.innerHTML = precio;
     item.appendChild(costo);
-    
+
     contenedorProducto.appendChild(item);
 }
 
@@ -39,7 +39,7 @@ const crearProducto2 = (imagen, descripcion, precio) => {
     costo.classList.add("administrar-productos__precio");
     costo.innerHTML = precio;
     item.appendChild(costo);
-    
+
     contenedorProducto.appendChild(item);
 }
 
@@ -61,20 +61,78 @@ const crearProducto3 = (imagen, descripcion, precio) => {
     costo.classList.add("administrar-productos__precio");
     costo.innerHTML = precio;
     item.appendChild(costo);
-    
+
     contenedorProducto.appendChild(item);
 }
 
 const deleteProduct = (event) => {
-    console.log("Me eliminaron", event.target);
     const elemento = event.target;
     elemento.parentNode.remove();
 }
 
 const editProduct = (event) => {
-    console.log("Me editaron", event.target);
+    const contenedorInputs = document.createElement("div");
+    contenedorInputs.classList.add("administar-productos__form")
+
+    const contenedorBtns = document.createElement("div");
+    contenedorBtns.classList.add("administar-productos__botones");
+
+    const botonAceptar = document.createElement("button");
+    botonAceptar.classList.add("administrar-productos__boton");
+    botonAceptar.innerHTML = "Aceptar";
+
+    const botonCancelar = document.createElement("button");
+    botonCancelar.classList.add("administrar-productos__boton--rojo");
+    botonCancelar.innerHTML = "Cancelar";
+
+    const campoImagen = document.createElement("input");
+    campoImagen.setAttribute("placeholder", "Ingrese la URL");
+
+    const campoDescripcion = document.createElement("input");
+    campoDescripcion.setAttribute("placeholder", "Descripción");
+
+    const campoPrecio = document.createElement("input");
+    campoPrecio.setAttribute("placeholder", "Precio");
+
     const elemento = event.target;
-    
+    const padre = elemento.parentNode;
+
+    contenedorInputs.appendChild(campoImagen);
+    contenedorInputs.appendChild(campoDescripcion);
+    contenedorInputs.appendChild(campoPrecio);
+    padre.appendChild(contenedorInputs);
+
+    contenedorBtns.appendChild(botonAceptar);
+    contenedorBtns.appendChild(botonCancelar);
+    padre.appendChild(contenedorBtns);
+
+    campoDescripcion.value = padre.childNodes[3].innerHTML;
+    campoPrecio.value = padre.childNodes[4].innerHTML;
+
+    botonAceptar.addEventListener("click", (event) => {
+        event.preventDefault()
+        const editarImagen = campoImagen.value;
+        const editarDescripcion = campoDescripcion.value;
+        const editarPrecio = campoPrecio.value;
+        if(campoImagen.value != ""){
+            padre.childNodes[2].setAttribute("src", editarImagen);
+            padre.childNodes[2].setAttribute("width", "176px")
+        }
+        if(campoDescripcion.value != ""){
+            padre.childNodes[3].innerHTML = editarDescripcion;
+        }
+        if(campoPrecio.value != ""){
+            padre.childNodes[4].innerHTML = editarPrecio;
+        }
+        contenedorInputs.style.display = "none";
+        contenedorBtns.style.display = "none";
+
+    });
+
+    botonCancelar.addEventListener("click", () => {
+        contenedorInputs.style.display = "none";
+        contenedorBtns.style.display = "none";
+    });
 }
 
 const createDelete = () => {
