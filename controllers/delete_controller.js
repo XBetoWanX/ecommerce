@@ -1,3 +1,5 @@
+
+
 //Función para crear cada uno de los productos
 const crearProducto = (imagen, descripcion, precio) => {
     const contenedorProducto = document.querySelector(".administrar-productos__productos");
@@ -70,7 +72,13 @@ const deleteProduct = (event) => {
     elemento.parentNode.remove();
 }
 
+
+
+
+
 const editProduct = (event) => {
+    const formularioEditar = document.createElement("section");
+    formularioEditar.classList.add("administar-productos__section")
     const contenedorInputs = document.createElement("div");
     contenedorInputs.classList.add("administar-productos__form")
 
@@ -100,11 +108,13 @@ const editProduct = (event) => {
     contenedorInputs.appendChild(campoImagen);
     contenedorInputs.appendChild(campoDescripcion);
     contenedorInputs.appendChild(campoPrecio);
-    padre.appendChild(contenedorInputs);
+    formularioEditar.appendChild(contenedorInputs);
+    padre.appendChild(formularioEditar);
 
     contenedorBtns.appendChild(botonAceptar);
     contenedorBtns.appendChild(botonCancelar);
-    padre.appendChild(contenedorBtns);
+    formularioEditar.appendChild(contenedorBtns);
+    padre.appendChild(formularioEditar);
 
     campoDescripcion.value = padre.childNodes[3].innerHTML;
     campoPrecio.value = padre.childNodes[4].innerHTML;
@@ -114,14 +124,14 @@ const editProduct = (event) => {
         const editarImagen = campoImagen.value;
         const editarDescripcion = campoDescripcion.value;
         const editarPrecio = campoPrecio.value;
-        if(campoImagen.value != ""){
+        if (campoImagen.value != "") {
             padre.childNodes[2].setAttribute("src", editarImagen);
             padre.childNodes[2].setAttribute("width", "176px")
         }
-        if(campoDescripcion.value != ""){
+        if (campoDescripcion.value != "") {
             padre.childNodes[3].innerHTML = editarDescripcion;
         }
-        if(campoPrecio.value != ""){
+        if (campoPrecio.value != "") {
             padre.childNodes[4].innerHTML = editarPrecio;
         }
         contenedorInputs.style.display = "none";
