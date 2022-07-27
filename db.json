@@ -1,60 +1,148 @@
 {
-    "productos": [
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars1.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars1"
-      },
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars2.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars2"
-      },
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars3.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars3"
-      },
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars4.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars4"
-      },
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars5.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars5"
-      },
-      {
-        "seccion": "StarWars",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/stars6.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "stars6"
-      },
-      {
-        "seccion": "Consolas",
-        "nombre": "Producto XYZ",
-        "precio": 50,
-        "image": "imagenes/consolas1.png",
-        "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
-        "id": "consolas1"
-      }
-    ]
+  "productos": [
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars1.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars1"
+    },
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars2.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars2"
+    },
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars3.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars3"
+    },
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars4.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars4"
+    },
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars5.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars5"
+    },
+    {
+      "seccion": "star wars",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/stars6.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "stars6"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas1.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas1"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas2.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas2"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas3.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas3"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas4.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas4"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas5.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas5"
+    },
+    {
+      "seccion": "consolas",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/consolas6.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "consolas6"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos1.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos1"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos2.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos2"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos3.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos3"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos4.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos4"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos5.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos5"
+    },
+    {
+      "seccion": "diversos",
+      "nombre": "Producto XYZ",
+      "precio": 50,
+      "image": "imagenes/Diversos6.png",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
+      "id": "diversos6"
+    }
+  ]
 }

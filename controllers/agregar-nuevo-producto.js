@@ -1,33 +1,37 @@
+import { clientServices } from "../service/client-service.js";
+
 const agregarProducto = document.querySelector(".agregar__container");
-
-agregarProducto.addEventListener("submit",(event) => {
+agregarProducto.addEventListener("submit", (event) => {
     event.preventDefault();
-    const URL = document.querySelector(".agregar__url");
-    const valorURL = URL.value;
+ 
+    const URL = document.querySelector(".agregar__url").value;
 
-    const categoria = document.querySelector(".agregar__categorias");
 
-    const nombreProducto = document.querySelector(".agregar__nombre")
-    const valorNombre = nombreProducto.value;
-    const precioProducto = document.querySelector(".agregar__precio");
-    const valorPrecio = precioProducto.value;
-    const descripcionProducto = document.querySelector(".agregar__descripcion");
+    const categoria = document.querySelector(".agregar__categorias").value;
 
-    if(categoria.value == "star wars"){
-        // crearProducto(valorURL, valorNombre, valorPrecio);
-    }
-    if(categoria.value == "consolas"){
-        // crearProducto2(valorURL, valorNombre, valorPrecio);
-    }
-    if(categoria.value == "diversos"){
-        // crearProducto3(valorURL, valorNombre, valorPrecio);
-    }
-    const agregarProductoStorage = {
-        valorURL,
-        valorNombre,
-        valorPrecio
-    }
-    sessionStorage.setItem("producto", JSON.stringify(agregarProductoStorage));
-    console.log(categoria.value);
+    const nombreProducto = document.querySelector(".agregar__nombre").value;
+    
+    var precioProducto = document.querySelector(".agregar__precio").value;
+    
+    const descripcionProducto = document.querySelector(".agregar__descripcion").value;
 
+    if (categoria == "star wars") {
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
+            console.log(respuesta);
+        }).catch(err => console.log(err));
+    }
+    if (categoria == "consolas") {
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
+            console.log(respuesta);
+        }).catch(err => console.log(err));
+       
+    }
+    if (categoria == "diversos") {
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
+            console.log(respuesta);
+        }).catch(err => console.log(err));
+       
+    }
 });
+
+

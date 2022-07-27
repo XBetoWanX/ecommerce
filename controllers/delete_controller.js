@@ -1,5 +1,4 @@
-
-
+import { clientServices } from "../service/client-service.js";
 //Función para crear cada uno de los productos
 const crearProducto = (imagen, descripcion, precio) => {
     const contenedorProducto = document.querySelector(".administrar-productos__productos");
@@ -159,20 +158,23 @@ const createEdit = () => {
     return i;
 }
 
-crearProducto("imagenes/stars1.png", "Producto XYZ", "$50");
-crearProducto("imagenes/stars2.png", "Producto XYZ", "$50");
-crearProducto("imagenes/stars3.png", "Producto XYZ", "$50");
-crearProducto("imagenes/stars4.png", "Producto XYZ", "$50");
 
 
+clientServices.listaProductos().then((data) => {
+    data.forEach(productos => {
+        if(productos.seccion == "star wars"){
+            var precioConcatenar = "$" + productos.precio
+            crearProducto(productos.image, productos.nombre, precioConcatenar);
+        }
+        if(productos.seccion == "consolas"){
+            var precioConcatenar = "$" + productos.precio
+            crearProducto2(productos.image, productos.nombre, precioConcatenar);
+        }
+        if (productos.seccion == "diversos"){
+            var precioConcatenar = "$" + productos.precio
+            crearProducto3(productos.image, productos.nombre, precioConcatenar);
+        }
+    });
+}).catch((error) => alert("Ocurrió un error"));
+    
 
-
-crearProducto2("imagenes/consolas1.png", "Producto XYZ", "$50");
-crearProducto2("imagenes/consolas2.png", "Producto XYZ", "$50");
-crearProducto2("imagenes/consolas3.png", "Producto XYZ", "$50");
-crearProducto2("imagenes/consolas4.png", "Producto XYZ", "$50");
-
-crearProducto3("imagenes/diversos1.png", "Producto XYZ", "$50");
-crearProducto3("imagenes/diversos2.png", "Producto XYZ", "$50");
-crearProducto3("imagenes/diversos3.png", "Producto XYZ", "$50");
-crearProducto3("imagenes/diversos4.png", "Producto XYZ", "$50");
