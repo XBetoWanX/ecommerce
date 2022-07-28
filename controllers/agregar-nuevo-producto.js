@@ -16,19 +16,19 @@ agregarProducto.addEventListener("submit", (event) => {
     const descripcionProducto = document.querySelector(".agregar__descripcion").value;
 
     if (categoria == "star wars") {
-        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
-            console.log(respuesta);
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
+            // window.location.href = "";
         }).catch(err => console.log(err));
     }
     if (categoria == "consolas") {
-        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
-            console.log(respuesta);
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
+            // window.location.href = "";
         }).catch(err => console.log(err));
        
     }
     if (categoria == "diversos") {
-        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(respuesta =>{
-            console.log(respuesta);
+        clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
+            // window.location.href = "";
         }).catch(err => console.log(err));
        
     }

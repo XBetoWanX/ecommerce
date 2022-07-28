@@ -10,9 +10,22 @@ const agregarNuevoProducto = (seccion, nombre, precio, image, descripcion) =>{
     })
 }
 
+const eliminarProducto = (id) =>{
+    console.log("Eliminar a: ", id);
+    return fetch(`http://localhost:3000/productos/${id}`,{
+        method: "DELETE"
+    });
+};
+
+// const editarProducto = () =>{
+//     return fetch(`http://localhost:3000/productos/${id}`,{
+//         method : ""
+// }
+
 export const clientServices = {
     listaProductos,
-    agregarNuevoProducto
+    agregarNuevoProducto,
+    eliminarProducto
 };
 
 
