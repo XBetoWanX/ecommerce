@@ -17,18 +17,18 @@ agregarProducto.addEventListener("submit", (event) => {
 
     if (categoria == "star wars") {
         clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
-            // window.location.href = "";
+            window.location.href = "administrar-productos.html";
         }).catch(err => console.log(err));
     }
     if (categoria == "consolas") {
         clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
-            // window.location.href = "";
+            window.location.href = "administrar-productos.html";
         }).catch(err => console.log(err));
        
     }
     if (categoria == "diversos") {
         clientServices.agregarNuevoProducto(categoria, nombreProducto, precioProducto, URL, descripcionProducto).then(() =>{
-            // window.location.href = "";
+            window.location.href = "administrar-productos.html";
         }).catch(err => console.log(err));
        
     }
