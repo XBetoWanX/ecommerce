@@ -32,7 +32,7 @@
         <form class="agregar__container" type="form" required>
             <h1 class="agregar__titulo">Editar producto</h1>
             <label for="url" >URL de imagen</label>
-            <input name = "url" class="agregar__url" type="url" placeholder="https://www.xxxxxxx.com" required>
+            <input name = "url" class="agregar__url" type="url" placeholder="https://www.ejemplo.com" required>
             <label for="categoria">Categoría</label>
             <select class="agregar__categorias" name = "categoria" placeholder="Categoría" required>
                 <option value="star wars">Star Wars</option>
@@ -43,7 +43,7 @@
             <label for="nombre">Nombre del producto</label>
             <input name = "nombre" class="agregar__nombre" type="text" placeholder="Taza" required>
             <label for="precio">Precio del producto</label>
-            <input name = "precio" class="agregar__precio" type="number" placeholder="MXN" required>
+            <input name = "precio" class="agregar__precio" type="number" placeholder="MXN" min ="1" pattern="^[1-9]+" required>
             <label for="descripcion">Descripción del producto</label>
             <input  name = "descripcion" class="agregar__descripcion" type="text" placeholder="Descripción del producto" required>
             <button class="agregar__boton" type="submit">Editar producto</button>

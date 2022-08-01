@@ -43,7 +43,7 @@
             <label for="nombre">Nombre del producto</label>
             <input name = "nombre" class="agregar__nombre" type="text" placeholder="Taza" required>
             <label for="precio">Precio del producto</label>
-            <input name = "precio" class="agregar__precio" type="number" placeholder="MXN" required>
+            <input name = "precio" class="agregar__precio" type="number" placeholder="MXN" min="1" required pattern="^[0-9]+">
             <label for="descripcion">Descripción del producto</label>
             <input  name = "descripcion" class="agregar__descripcion" type="text" placeholder="Descripción del producto" required>
             <button class="agregar__boton" type="submit">Agregar nuevo producto</button>
