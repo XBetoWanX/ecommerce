@@ -14,10 +14,14 @@ const starWars = (imagen, nombre, precio) => {
     const parrafoPrecio = document.createElement("p");
     parrafoPrecio.classList.add("productos__precio");
     parrafoPrecio.innerHTML = precio;
+    const verProducto = document.createElement("a");
+    verProducto.classList.add("productos__link");
+    verProducto.innerHTML = "Ver producto";
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
     contenedorProducto.appendChild(parrafoPrecio);
+    contenedorProducto.append(verProducto);
     contenedorPadre.appendChild(contenedorProducto);
 
 }
@@ -37,10 +41,14 @@ const consolas = (imagen, nombre, precio) => {
     const parrafoPrecio = document.createElement("p");
     parrafoPrecio.classList.add("productos__precio");
     parrafoPrecio.innerHTML = precio;
+    const verProducto = document.createElement("a");
+    verProducto.classList.add("productos__link");
+    verProducto.innerHTML = "Ver producto";
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
     contenedorProducto.appendChild(parrafoPrecio);
+    contenedorProducto.append(verProducto);
     contenedorPadre.appendChild(contenedorProducto);
 
 }
@@ -60,10 +68,14 @@ const diversos = (imagen, nombre, precio) => {
     const parrafoPrecio = document.createElement("p");
     parrafoPrecio.classList.add("productos__precio");
     parrafoPrecio.innerHTML = precio;
+    const verProducto = document.createElement("a");
+    verProducto.classList.add("productos__link");
+    verProducto.innerHTML = "Ver producto";
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
     contenedorProducto.appendChild(parrafoPrecio);
+    contenedorProducto.append(verProducto);
     contenedorPadre.appendChild(contenedorProducto);
 
 }
