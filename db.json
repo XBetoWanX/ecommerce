@@ -2,7 +2,7 @@
   "productos": [
     {
       "seccion": "star wars",
-      "nombre": "Producto XYZ",
+      "nombre": "Taza Storm Trooper",
       "precio": 50,
       "image": "imagenes/stars1.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -10,7 +10,7 @@
     },
     {
       "seccion": "star wars",
-      "nombre": "Producto XYZ",
+      "nombre": "Lego Star Wars",
       "precio": 50,
       "image": "imagenes/stars2.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -18,7 +18,7 @@
     },
     {
       "seccion": "star wars",
-      "nombre": "Producto XYZ",
+      "nombre": "Yoda",
       "precio": 50,
       "image": "imagenes/stars3.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -34,7 +34,7 @@
     },
     {
       "seccion": "star wars",
-      "nombre": "Producto XYZ",
+      "nombre": "Baby Yoda",
       "precio": 50,
       "image": "imagenes/stars5.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -42,7 +42,7 @@
     },
     {
       "seccion": "star wars",
-      "nombre": "Producto XYZ",
+      "nombre": "Kylo Ren",
       "precio": 50,
       "image": "imagenes/stars6.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -50,7 +50,7 @@
     },
     {
       "seccion": "consolas",
-      "nombre": "Producto XYZ",
+      "nombre": "Control Xbox One S",
       "precio": 50,
       "image": "imagenes/consolas1.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -58,7 +58,7 @@
     },
     {
       "seccion": "consolas",
-      "nombre": "Producto XYZ",
+      "nombre": "PS5",
       "precio": 50,
       "image": "imagenes/consolas2.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
@@ -66,7 +66,7 @@
     },
     {
       "seccion": "consolas",
-      "nombre": "Producto XYZ",
+      "nombre": "Nintendo NES Classic Edition",
       "precio": 50,
       "image": "imagenes/consolas3.png",
       "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",

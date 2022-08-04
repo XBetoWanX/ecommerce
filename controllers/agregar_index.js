@@ -1,5 +1,5 @@
 import { clientServices } from "../service/client-service.js";
-const starWars = (imagen, nombre, precio) => {
+const starWars = (imagen, nombre, precio, id) => {
     const contenedorPadre = document.querySelector(".productos__hardware")
     const contenedorProducto = document.createElement("div");
     contenedorProducto.classList.add("productos__container")
@@ -17,6 +17,7 @@ const starWars = (imagen, nombre, precio) => {
     const verProducto = document.createElement("a");
     verProducto.classList.add("productos__link");
     verProducto.innerHTML = "Ver producto";
+    verProducto.setAttribute(`href`, `./ver-producto.html?id=${id}`);
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
@@ -26,7 +27,7 @@ const starWars = (imagen, nombre, precio) => {
 
 }
 
-const consolas = (imagen, nombre, precio) => {
+const consolas = (imagen, nombre, precio, id) => {
     const contenedorPadre = document.querySelector(".productos__consolas")
     const contenedorProducto = document.createElement("div");
     contenedorProducto.classList.add("productos__container")
@@ -44,16 +45,17 @@ const consolas = (imagen, nombre, precio) => {
     const verProducto = document.createElement("a");
     verProducto.classList.add("productos__link");
     verProducto.innerHTML = "Ver producto";
+    verProducto.setAttribute(`href`, `./ver-producto.html?id=${id}`);
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
     contenedorProducto.appendChild(parrafoPrecio);
     contenedorProducto.append(verProducto);
     contenedorPadre.appendChild(contenedorProducto);
-
+    console.log(id);
 }
 
-const diversos = (imagen, nombre, precio) => {
+const diversos = (imagen, nombre, precio, id) => {
     const contenedorPadre = document.querySelector(".productos__pcs-armadas")
     const contenedorProducto = document.createElement("div");
     contenedorProducto.classList.add("productos__container")
@@ -71,6 +73,7 @@ const diversos = (imagen, nombre, precio) => {
     const verProducto = document.createElement("a");
     verProducto.classList.add("productos__link");
     verProducto.innerHTML = "Ver producto";
+    verProducto.setAttribute(`href`, `./ver-producto.html?id=${id}`);
 
     contenedorProducto.appendChild(img);
     contenedorProducto.appendChild(parrafoNombre);
@@ -82,18 +85,18 @@ const diversos = (imagen, nombre, precio) => {
 
 clientServices.listaProductos().then((data) => {
     data.forEach(productos => {
-        const {image, nombre, precio} = productos
-        if(productos.seccion == "star wars"){
+        const {seccion, image, nombre, precio, id} = productos
+        if(seccion == "star wars"){
             var precioConcatenar = "$" + precio
-            starWars(image, nombre, precioConcatenar);
+            starWars(image, nombre, precioConcatenar, id);
         }
-        if(productos.seccion == "consolas"){
+        if(seccion == "consolas"){
             var precioConcatenar = "$" + precio
-            consolas(image, nombre, precioConcatenar);
+            consolas(image, nombre, precioConcatenar, id);
         }
-        if (productos.seccion == "diversos"){
+        if (seccion == "diversos"){
             var precioConcatenar = "$" + precio
-            diversos(image, nombre, precioConcatenar);
+            diversos(image, nombre, precioConcatenar, id);
         }
     });
-}).catch((error) => alert("Ocurrió un error"));
+}).catch((error) => console.log("Ocurrió un error"));

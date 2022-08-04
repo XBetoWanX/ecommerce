@@ -73,6 +73,15 @@
     background: var(--color-azul);
     color: #fdfdfd;
 }
+.encabezado__articulos{
+    position: absolute;
+    left: 294px;
+    background: white;
+    padding: 0 5em 2em 5em;
+}
+.encabezado__item{
+    list-style: none;
+}
 /* CSS DEL BANNER */
 .banner{
     background-image: url("https://blog.seccionamarilla.com.mx/wp-content/uploads/2020/06/pc-gamer-barata-partes-y-ycaracteristicas-770x578.jpg");

@@ -1,0 +1,23 @@
+.ver-producto{
+    margin: 0 20% 0 20%;
+}
+
+.ver-producto__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin: 1em;
+}
+
+.ver-producto__img{
+    width: 176px;
+    height: 174px;
+}
+.ver-producto__descripcion, .ver-producto__parrafo, .ver-producto__informacion{
+    font-family: var(--Raleway);
+}
+
+.ver-producto__precio{
+    font-family: var(--Raleway);
+    font-weight: bold;
+}

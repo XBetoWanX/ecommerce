@@ -31,12 +31,17 @@ const editarProducto = (seccion, nombre, precio, image, descripcion, id) => {
     }).then( respuesta => console.log(respuesta)).catch((err) => console.log(err));
 };
 
+const buscarProducto = () =>{
+    return fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+}
+
 export const clientServices = {
     listaProductos,
     agregarNuevoProducto,
     eliminarProducto,
     detalleProducto,
-    editarProducto   
+    editarProducto,
+    buscarProducto
 };
 
 

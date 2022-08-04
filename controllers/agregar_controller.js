@@ -61,6 +61,7 @@ const crearProducto2 = (imagen, descripcion, precio, id) => {
     img.classList.add("administrar-productos__imagen");
     img.setAttribute("src", imagen);
     img.setAttribute("width", "176px");
+    img.setAttribute("height", "174px");
     item.appendChild(img);
     const parrafo = document.createElement("p");
     parrafo.classList.add("administrar-productos__descripcion");
@@ -99,6 +100,7 @@ const crearProducto3 = (imagen, descripcion, precio, id) => {
     img.classList.add("administrar-productos__imagen");
     img.setAttribute("src", imagen);
     img.setAttribute("width", "176px");
+    img.setAttribute("height", "174px");
     item.appendChild(img);
     const parrafo = document.createElement("p");
     parrafo.classList.add("administrar-productos__descripcion");
