@@ -24,13 +24,19 @@
             </div>
         </header>
         <section class="login">
-            <form class="login__container" action="administrar-productos.html">
+            <form class="login__container">
                 <h3 class="login__titulo">Iniciar sesión</h3>
                 <input class="login__correo" type="email" required placeholder="Escriba su correo electrónico">
                 <input class="login__contraseña" type="password" required placeholder="Escriba su contraseña">
                 <button class="login__boton" type="submit">Entrar</button>
+                <div class="login__ocultar ocultar">
+                    <span class="ocultar__span">Usuario y/o contraseña incorrectos.</span>
+                    <span class="ocultar__link"><a href="index.html">Registrarse</a></span>
+                </div>
             </form>
         </section>
+        
+       
         <section class="sobre-nosotros">
             <div class="sobre-nosotros__container">
                 <img class="sobre-nosotros__logo" src="imagenes/Logo.svg">
@@ -53,5 +59,6 @@
             <p class="footer__desarrollador">Desarrollado por Alberto Salazar</p>
             <p class="footer__año">2022</p>
         </section>
+        <script src="controllers/validar-usuario.js"></script>
     </body>
 </html>

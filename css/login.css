@@ -27,6 +27,18 @@
     background: var(--color-azul);
     border: none;
 }
+.ocultar__span{
+    font-family: var(--Raleway);
+    color: red;
+    font-weight: bold;
+}
+.ocultar__link{
+    font-family: var(--Raleway);
+    
+}
+.container{
+    margin: 1em 20% 0 20%;
+}
 ::placeholder{
     font-family: var(--Raleway);
     padding-left: 1em;

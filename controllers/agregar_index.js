@@ -52,7 +52,6 @@ const consolas = (imagen, nombre, precio, id) => {
     contenedorProducto.appendChild(parrafoPrecio);
     contenedorProducto.append(verProducto);
     contenedorPadre.appendChild(contenedorProducto);
-    console.log(id);
 }
 
 const diversos = (imagen, nombre, precio, id) => {
@@ -84,17 +83,21 @@ const diversos = (imagen, nombre, precio, id) => {
 }
 
 clientServices.listaProductos().then((data) => {
+    var count = 0;
     data.forEach(productos => {
         const {seccion, image, nombre, precio, id} = productos
-        if(seccion == "star wars"){
+        
+        count = count + 1;
+        console.log(count);
+        if(seccion == "star wars" && count <= 6){
             var precioConcatenar = "$" + precio
             starWars(image, nombre, precioConcatenar, id);
         }
-        if(seccion == "consolas"){
+        if(seccion == "consolas" && count <= 12){
             var precioConcatenar = "$" + precio
             consolas(image, nombre, precioConcatenar, id);
         }
-        if (seccion == "diversos"){
+        if (seccion == "diversos" && count <= 18){
             var precioConcatenar = "$" + precio
             diversos(image, nombre, precioConcatenar, id);
         }
