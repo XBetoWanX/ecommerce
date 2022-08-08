@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Registro</title>
         <meta charset="utf-8">
         <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -25,13 +25,18 @@
         </header>
         <section class="login">
             <form class="login__container">
-                <h3 class="login__titulo">Iniciar sesión</h3>
-                <input class="login__correo" type="email" required placeholder="Escriba su correo electrónico">
-                <input class="login__contraseña" type="password" required placeholder="Escriba su contraseña">
-                <button class="login__boton" type="submit">Entrar</button>
+                <h3 class="login__titulo">Registrarse</h3>
+                <input class="login__correo" type="email" required placeholder="Escriba una dirección de correo electrónico">
+                <span class="ocultar__span ocultar">El correo es incorrecto</span>
+                <span class="ocultar__correo-repetido ocultar">Ese correo ya ha sido registrado</span>
+                <input class="login__contraseña" type="password" required placeholder="Escriba una contraseña">
+                <input class="login__confirmar" type="password" required placeholder="Confirme la contraseña">
+                <span class="ocultar__confirmar ocultar">Las contraseñas no coinciden</span>
+                <button class="login__boton" type="submit">Registrarse</button>
                 <div class="login__ocultar ocultar">
-                    <span class="ocultar__span">Usuario y/o contraseña incorrectos.</span>
-                    <span class="ocultar__link"><a href="registro.html">Registrarse</a></span>
+                    <span class="ocultar__span">La contraseña debe de contener mínimo 8 caracteres.</span>
+                    <span class="ocultar__parrafo">¿Ya tienes una cuenta? </span>
+                    <span class="ocultar__link"><a href="login.html">Iniciar Sesión</a></span>
                 </div>
             </form>
         </section>
@@ -59,6 +64,6 @@
             <p class="footer__desarrollador">Desarrollado por Alberto Salazar</p>
             <p class="footer__año">2022</p>
         </section>
-        <script type="module" src="controllers/validar-usuario.js"></script>
+        <script type="module" src="controllers/validar-registro.js"></script>
     </body>
 </html>

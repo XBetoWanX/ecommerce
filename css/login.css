@@ -14,25 +14,25 @@
     text-align: center;
     font-family: var(--Raleway);
 }
-.login__correo, .login__contraseña{
-    width: 20em;
+.login__correo, .login__contraseña, .login__confirmar{
+    width: 22em;
     height: 3em;
     border: none;
 }
 .login__boton{
-    width: 20.3em;
+    width: 22.3em;
     height: 3em;
     font-family: var(--Raleway);
     color: #fdfdfd;
     background: var(--color-azul);
     border: none;
 }
-.ocultar__span{
+.ocultar__span, .ocultar__confirmar, .ocultar__correo-repetido{
     font-family: var(--Raleway);
     color: red;
     font-weight: bold;
 }
-.ocultar__link{
+.ocultar__link, .ocultar__parrafo{
     font-family: var(--Raleway);
     
 }
