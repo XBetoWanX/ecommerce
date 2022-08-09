@@ -14,6 +14,7 @@ clientServices.buscarProducto().then((data) => {
         const items = document.createElement("li");
         items.classList.add("encabezado__item")
         const link = document.createElement("a");
+        link.setAttribute(`href`, `./ver-producto.html?id=${producto.id}`)
         link.classList.add(".encabezado__link")
         items.classList.add("ocultar");
         link.innerHTML = productoNombre;
